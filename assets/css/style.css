@@ -1,0 +1,156 @@
+/* Global */
+
+html, body{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/white_wall2.png");
+}
+
+/* Header */
+
+.navbar{
+    border-bottom: 2px solid #dddddd;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+li.nav-item, a.nav-link{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-right: 1px solid #dddddd;
+    max-height: 23px;
+}
+
+.navbar-brand{
+    background-color: #4aaaa5;
+    color: #ffffff !important;  
+    height: 80px;
+    width: 270px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Main Area */
+
+hr{
+    border-bottom: 3px solid #dddddd;
+}
+
+.collapse:not(.show){
+    display: inline;
+}
+
+.about_me{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #cccccc; 
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+.main{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-bottom: 15%;
+}
+
+p{
+    font-size: 17px;
+    line-height: 32px;
+}
+/*Portfolio*/
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+  
+.img_text {
+    height: 60px;
+    width: 280px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    background-color: #4aaaa5; 
+    padding-top: 5%;
+} 
+
+/*Contact*/
+
+.btn {
+    padding: 8px 25px 8px 25px;
+    text-align: center;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #4aaaa5; 
+    border-bottom: 2px solid #dddddd;
+} 
+
+/* Footer */
+
+.fixed-bottom {
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    text-align: center;
+    font-size: 12px;
+    color:#dddddd;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+
+}
+
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}
