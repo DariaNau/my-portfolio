@@ -9,6 +9,7 @@ html, body{
 
 .navbar{
     border-bottom: 2px solid #dddddd;
+    
 }
 
 .navbar-nav {
@@ -48,10 +49,10 @@ hr{
   }
 
 .main{
-    display: grid;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     margin-bottom: 15%;
+    padding: 5%;
 }
 
 p{
@@ -75,6 +76,13 @@ p{
     text-align: center;
     background-color: #4aaaa5; 
     padding-top: 5%;
+    
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px
 } 
 
 /*Contact*/
@@ -87,7 +95,6 @@ p{
     background-color: #4aaaa5; 
     border-bottom: 2px solid #dddddd;
 } 
-
 
 /* Footer */
 
@@ -105,6 +112,7 @@ p{
 #footer{
     padding-top: 1.2%;
 }
+
 
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -126,86 +134,59 @@ p{
 
     .container{
         max-width: 575.98px;
-        margin: 0;   
-        padding: 0;
-        display: flex;
-        justify-content: space-evenly; 
-        align-items: center;
+        margin: 0 !important;   
+        padding: 0 !important;
     }
 
     ul.navbar-nav{
         display: flex;
-        justify-content: space-evenly; 
+        justify-content: center; 
         align-items: center;
     }
 
     .navbar-brand {
         flex: 100%;
         margin: 0;
-        text-align: center;
     }
 
-li.nav-item{
-
-
+    .navbar-nav .nav-link {
+        padding-right: 10px !important;
+        padding-left: 5px !important;
     }
-
-    a.nav-link{
- 
-
+    
+    img{
+        width: 100%;
+        height: 100%;
     }
-
-    
-img{
-    
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-
-
-
- 
-    
 }
 
 
-    
-
-
 @media (min-width: 576px) {
+
     .container{
         max-width: 576px;  
     }
 
-        .navbar-brand {
-        flex: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
-    .main{
-=
+    ul.navbar-nav{
         display: flex;
-        justify-content: space-around; 
+        justify-content: center; 
         align-items: center;
-
-
     }
 
-  
-}
-
-@media (min-width: 768px) {
-    .container{
-        max-width: 768px;
-
+    .navbar-brand {
+        margin: 0 auto;
     }
-}
 
-@media (min-width: 992px) {
-    .container{
-        max-width: 992px;
+    .navbar-nav .nav-link {
+        padding-right: 10px !important;
+        padding-left: 5px !important;
+    }
+    
+    img{
+        margin: 0 auto;
+		clear: both;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -213,6 +194,7 @@ img{
     .container{
         max-width: 960px;
     }
+}
 
 
 /* @include media-breakpoint-up(xs) {
