@@ -9,7 +9,6 @@ html, body{
 
 .navbar{
     border-bottom: 2px solid #dddddd;
-    
 }
 
 .navbar-nav {
@@ -62,7 +61,12 @@ p{
 
 /*Portfolio*/
 
-.img_text {
+.img_responsive{
+    margin: 0;
+    padding: 0;
+}
+
+.img_text{
     height: 60px;
     width: 280px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -71,6 +75,7 @@ p{
     background-color: #4aaaa5; 
     padding-top: 4%;
 } 
+
 
 /*Contact*/
 
@@ -100,27 +105,9 @@ p{
     padding-top: 1.2%;
 }
 
-
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
-
-
 @media (max-width: 575.98px) {
 
     .container{
-        max-width: 575.98px;
         margin: 0 !important;   
         padding: 0 !important;
     }
@@ -153,12 +140,7 @@ p{
     }
 }
 
-
 @media (min-width: 576px) {
-
-    .container{
-        max-width: 576px;  
-    }
 
     ul.navbar-nav{
         display: flex;
@@ -167,7 +149,7 @@ p{
     }
 
     .navbar-brand {
-        margin: 0 auto;
+        margin: auto;
     }
 
     .navbar-nav .nav-link {
@@ -179,7 +161,6 @@ p{
         margin: 0 auto;
 		clear: both;
         width: 100%;
-        height: 100%;
 
     }
 
@@ -190,6 +171,7 @@ p{
     }
 }
 
+
 @media (min-width: 1200px) {
     .container{
         max-width: 960px;
@@ -197,36 +179,4 @@ p{
 }
 
 
-/* @include media-breakpoint-up(xs) {
-  .container, .navbar, .navbar-brand, .ul {
-      margin: 0 !important;
-      padding: 0 !important;
-      
-  }
-}
 
-@include media-breakpoint-up(s) {
-    .container, .navbar, .navbar-brand, .ul {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    .container, .navbar, .navbar-brand, .ul {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    .container, .navbar, .navbar-brand, .ul {
-        margin: 0;
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-    .container, .navbar, .navbar-brand, .ul {
-        margin: 0;
-    }
-  } */
