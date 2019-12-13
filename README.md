@@ -1,6 +1,6 @@
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 
-https://darianau.github.io/bootstrap-portfolio/index.html
+## Link https://darianau.github.io/bootstrap-portfolio/index.html
 
 ## Description
 
@@ -46,5 +46,4 @@ GitHub repository with README describing the project
 #### Bonus
 
 Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (Hint: Check out the Bootstrap documentation).
-
 
