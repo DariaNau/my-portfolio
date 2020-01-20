@@ -6,8 +6,7 @@ This website was built using HTML5, CSS3, Bootstrap 4. Responsive design ensured
 
 ## Installation
 
-Please visit the deployed project at:
-https://darianau.github.io/bootstrap-portfolio/
+Please visit the deployed project at:https://darianau.github.io/my-portfolio/
 
 ## Usage
 
